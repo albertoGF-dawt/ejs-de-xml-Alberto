@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE library SYSTEM "dtdej.dtd">
 
-<!-- <library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="xsdej.xsd"> -->
-<library>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="xsdej.xsd">
+    <!-- <library> -->
 
     <book isbn="123A" category="fiction">
         <title>XML Basics</title>
@@ -18,11 +18,6 @@
     <book isbn="456B" category="science">
         <title>Advanced XML</title>
         <price>40</price>
-        <publisher>
-            <name>hola</name>
-            <country>hola</country>
-        </publisher>
-
         <!-- AQUÍ USAMOS substitutionGroup -->
         <editorial>
             <name>SciencePress</name>

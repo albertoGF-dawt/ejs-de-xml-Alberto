@@ -1,6 +1,8 @@
 <!ELEMENT library (book+)>
+<!ATTLIST library xmlns:xsi CDATA #REQUIRED>
+<!ATTLIST library xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
 
-<!ELEMENT book (title, price, publisher, editorial?)>
+<!ELEMENT book (title, price, publisher?, editorial?)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
 
