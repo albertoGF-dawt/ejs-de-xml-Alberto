@@ -1,12 +1,14 @@
 <!ELEMENT library (book+)>
 
-<!ELEMENT book (title, price, publisher)>
+<!ELEMENT book (title, price, publisher, editorial?)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
 
 <!ELEMENT publisher (name, country)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT country (#PCDATA)>
+
+<!ELEMENT editorial (name, country)>
 
 <!ATTLIST book isbn CDATA #REQUIRED>
 <!ATTLIST book category CDATA #IMPLIED>
