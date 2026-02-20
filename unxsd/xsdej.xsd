@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- ENUMERACIÓN -->
+    <xs:simpleType name="categoryType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="fiction" />
+            <xs:enumeration value="science" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- RESTRICCIÓN NUMÉRICA -->
+    <xs:simpleType name="priceType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- COMPLEX TYPE -->
+    <xs:complexType name="publisherType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="country" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- ELEMENTO BASE -->
+    <xs:element name="publisher" type="publisherType" />
+
+    <!-- SUBSTITUTION GROUP -->
+    <xs:element name="editorial" substitutionGroup="publisher" type="publisherType" />
+
+    <!-- COMPLEX TYPE BOOK -->
+    <xs:complexType name="bookType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string" />
+            <xs:element name="price" type="priceType" />
+            <xs:element ref="publisher" />
+        </xs:sequence>
+
+        <!-- ATRIBUTOS -->
+        <xs:attribute name="isbn" type="xs:string" use="required" />
+        <xs:attribute name="category" type="categoryType" use="optional" />
+    </xs:complexType>
+
+    <!-- RAÍZ -->
+    <xs:element name="library">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- MIN Y MAX -->
+                <xs:element name="book" type="bookType" minOccurs="1" maxOccurs="5" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

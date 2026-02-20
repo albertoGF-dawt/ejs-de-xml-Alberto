@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<initiative xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="xsd3.xsd"
+    initiative_name="Initiative 2">
+
+    <organization organization_name="TechNova GmbH">
+
+        <staff staff_id="T001">
+            <staff_name>Maximilian Bauer</staff_name>
+            <role>lead</role>
+            <pay>4500.00</pay>
+            <start_date>2026-01-01</start_date>
+            <end_date>2026-06-30</end_date>
+            <partner>TechNova GmbH</partner>
+            <manager_code>MB-111</manager_code>
+        </staff>
+
+        <staff staff_id="T002">
+            <staff_name>Clara Weiss</staff_name>
+            <role>intern</role>
+            <pay>2100.00</pay>
+            <start_date>2026-02-15</start_date>
+            <end_date>2026-07-31</end_date>
+            <partner>TechNova GmbH</partner>
+            <manager_code>CW-222</manager_code>
+        </staff>
+
+    </organization>
+
+    <organization organization_name="SoftSolutions Inc.">
+
+        <staff staff_id="T003">
+            <staff_name>Oliver Smith</staff_name>
+            <role>intern</role>
+            <pay>1800.00</pay>
+            <start_date>2026-04-01</start_date>
+            <end_date>2026-10-01</end_date>
+            <partner>SoftSolutions Inc.</partner>
+            <manager_code>OS-333</manager_code>
+        </staff>
+
+        <staff staff_id="T004">
+            <staff_name>Elena Petrova</staff_name>
+            <role>lead</role>
+            <pay>4000.25</pay>
+            <start_date>2026-05-01</start_date>
+            <end_date>2026-11-30</end_date>
+            <partner>SoftSolutions Inc.</partner>
+            <manager_code>EP-444</manager_code>
+        </staff>
+
+    </organization>
+
+</initiative>

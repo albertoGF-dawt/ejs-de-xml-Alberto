@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<initiative xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="xsd3.xsd"
+    initiative_name="Initiative 1">
+
+    <organization organization_name="AlphaTech Co.">
+
+        <staff staff_id="S001">
+            <staff_name>Isabel Fernández</staff_name>
+            <role>lead</role>
+            <pay>4200.00</pay>
+            <start_date>2026-01-10</start_date>
+            <end_date>2026-12-20</end_date>
+            <main_partner>AlphaTech Co.</main_partner>
+            <manager_code>ABC-101</manager_code>
+        </staff>
+
+        <staff staff_id="S002">
+            <staff_name>David Kim</staff_name>
+            <role>intern</role>
+            <pay>2000.50</pay>
+            <start_date>2026-02-01</start_date>
+            <end_date>2026-11-15</end_date>
+            <main_partner>AlphaTech Co.</main_partner>
+            <manager_code>DK-202</manager_code>
+        </staff>
+
+    </organization>
+
+    <organization organization_name="BetaSoft Ltd.">
+
+        <staff staff_id="S003">
+            <staff_name>Sara Johnson</staff_name>
+            <role>lead</role>
+            <pay>4800.00</pay>
+            <start_date>2026-01-05</start_date>
+            <end_date>2026-07-30</end_date>
+            <main_partner>BetaSoft Ltd.</main_partner>
+            <manager_code>SJ-303</manager_code>
+        </staff>
+
+        <staff staff_id="S004">
+            <staff_name>Leon Müller</staff_name>
+            <role>intern</role>
+            <pay>1500.00</pay>
+            <start_date>2026-03-01</start_date>
+            <end_date>2026-09-01</end_date>
+            <main_partner>BetaSoft Ltd.</main_partner>
+            <manager_code>LM-404</manager_code>
+        </staff>
+
+    </organization>
+
+</initiative>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="xsd1.xsd"
+    project_name="Delta Project">
+
+    <company company_name="FutureSoft GmbH">
+
+        <worker worker_id="E101">
+            <worker_name>Hans Müller</worker_name>
+            <job_category>senior</job_category>
+            <salary>3600.00</salary>
+            <project_start_date>2025-02-01</project_start_date>
+            <project_end_date>2025-08-01</project_end_date>
+            <unternehmen>FutureSoft GmbH</unternehmen>
+            <coordinator_id>HM-111</coordinator_id>
+        </worker>
+
+        <worker worker_id="E102">
+            <worker_name>Claire Dubois</worker_name>
+            <job_category>junior</job_category>
+            <salary>2200.00</salary>
+            <project_start_date>2025-03-01</project_start_date>
+            <project_end_date>2025-09-01</project_end_date>
+            <unternehmen>FutureSoft GmbH</unternehmen>
+            <coordinator_id>CD-222</coordinator_id>
+        </worker>
+
+        <worker worker_id="E103">
+            <worker_name>Marco Bianchi</worker_name>
+            <job_category>junior</job_category>
+            <salary>2000.00</salary>
+            <project_start_date>2025-04-15</project_start_date>
+            <project_end_date>2025-10-15</project_end_date>
+            <unternehmen>FutureSoft GmbH</unternehmen>
+            <coordinator_id>MB-333</coordinator_id>
+        </worker>
+
+    </company>
+
+</project>

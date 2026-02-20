@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="xsd1.xsd"
+    project_name="Gamma Project">
+
+    <company company_name="NextGen Tech S.L.">
+
+        <worker worker_id="W101">
+            <worker_name>Lucía Fernández</worker_name>
+            <job_category>senior</job_category>
+            <salary>3400.00</salary>
+            <project_start_date>2024-05-01</project_start_date>
+            <project_end_date>2024-12-20</project_end_date>
+            <participating_company>NextGen Tech S.L.</participating_company>
+            <coordinator_id>LF-101</coordinator_id>
+        </worker>
+
+        <worker worker_id="W102">
+            <worker_name>Diego Martín</worker_name>
+            <job_category>junior</job_category>
+            <salary>1900.00</salary>
+            <project_start_date>2024-06-10</project_start_date>
+            <project_end_date>2024-11-15</project_end_date>
+            <participating_company>NextGen Tech S.L.</participating_company>
+            <coordinator_id>DM-202</coordinator_id>
+        </worker>
+
+        <worker worker_id="W103">
+            <worker_name>Sara Ruiz</worker_name>
+            <job_category>junior</job_category>
+            <salary>2100.00</salary>
+            <project_start_date>2024-07-01</project_start_date>
+            <project_end_date>2024-10-30</project_end_date>
+            <participating_company>NextGen Tech S.L.</participating_company>
+            <coordinator_id>SR-303</coordinator_id>
+        </worker>
+
+    </company>
+
+</project>

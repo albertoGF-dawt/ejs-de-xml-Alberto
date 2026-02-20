@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- SUBSTITUTION GROUP -->
+  <xs:element name="participating_company" type="xs:string" />
+  <xs:element name="unternehmen" substitutionGroup="participating_company" type="xs:string" />
+
+  <!-- GROUP: period -->
+  <xs:group name="period">
+    <xs:sequence>
+      <xs:element name="project_start_date" type="xs:date" />
+      <xs:element name="project_end_date" type="xs:date" />
+    </xs:sequence>
+  </xs:group>
+
+  <!-- job_category -->
+  <xs:simpleType name="jobCategoryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="junior" />
+      <xs:enumeration value="senior" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- coordinator_id -->
+  <xs:simpleType name="coordinatorIdType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-zñÑ]{1,3}-[0-9]{3}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- salary -->
+  <xs:simpleType name="salaryType">
+    <xs:restriction base="xs:decimal">
+      <xs:minExclusive value="0" />
+      <xs:maxExclusive value="4000" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ROOT -->
+  <xs:element name="project">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="company" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+
+              <!-- 3 a 6 workers -->
+              <xs:element name="worker" minOccurs="3" maxOccurs="6">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="worker_name" type="xs:string" />
+                    <xs:element name="job_category" type="jobCategoryType" />
+                    <xs:element name="salary" type="salaryType" />
+                    <xs:group ref="period" />
+                    <xs:element ref="participating_company" />
+                    <xs:element name="coordinator_id" type="coordinatorIdType" />
+                  </xs:sequence>
+                  <xs:attribute name="worker_id" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+            <xs:attribute name="company_name" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="project_name" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

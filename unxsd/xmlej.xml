@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="xsdej.xsd">
+
+    <book isbn="123A" category="fiction">
+        <title>XML Basics</title>
+        <price>25.5</price>
+
+        <publisher>
+            <name>TechBooks</name>
+            <country>Spain</country>
+        </publisher>
+    </book>
+
+    <book isbn="456B" category="science">
+        <title>Advanced XML</title>
+        <price>40</price>
+
+        <!-- AQUÍ USAMOS substitutionGroup -->
+        <editorial>
+            <name>SciencePress</name>
+            <country>Germany</country>
+        </editorial>
+    </book>
+
+</library>
